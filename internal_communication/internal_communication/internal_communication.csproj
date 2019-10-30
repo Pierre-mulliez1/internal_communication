@@ -51,6 +51,7 @@
     <Compile Include="del_confirm.Designer.cs">
       <DependentUpon>del_confirm.cs</DependentUpon>
     </Compile>
+    <Compile Include="projectDA.cs" />
     <Compile Include="projects_class.cs" />
     <Compile Include="Selection.cs">
       <SubType>Form</SubType>

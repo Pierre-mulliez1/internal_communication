@@ -42,6 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.del_btn = new System.Windows.Forms.Button();
+            this.save_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -105,6 +106,7 @@
             this.project_txtbx.Name = "project_txtbx";
             this.project_txtbx.Size = new System.Drawing.Size(174, 30);
             this.project_txtbx.TabIndex = 4;
+            this.project_txtbx.TextChanged += new System.EventHandler(this.project_txtbx_TextChanged);
             // 
             // go_btn
             // 
@@ -197,12 +199,24 @@
             this.del_btn.UseVisualStyleBackColor = true;
             this.del_btn.Click += new System.EventHandler(this.button1_Click);
             // 
+            // save_btn
+            // 
+            this.save_btn.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save_btn.Location = new System.Drawing.Point(986, 89);
+            this.save_btn.Name = "save_btn";
+            this.save_btn.Size = new System.Drawing.Size(97, 75);
+            this.save_btn.TabIndex = 14;
+            this.save_btn.Text = "Save";
+            this.save_btn.UseVisualStyleBackColor = true;
+            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
+            // 
             // project_selection_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1087, 461);
+            this.Controls.Add(this.save_btn);
             this.Controls.Add(this.del_btn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -241,6 +255,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button del_btn;
+        private System.Windows.Forms.Button save_btn;
     }
 }
 

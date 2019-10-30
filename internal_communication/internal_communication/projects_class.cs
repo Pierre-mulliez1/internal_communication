@@ -37,7 +37,7 @@ namespace internal_communication
         }
         public string Showproject()
         {
-        return Project_name + ", " + Year + ", " + Category;
+        return Project_name + "," + Year + "," + Category;
         }
       
         public Projects_class() { }
