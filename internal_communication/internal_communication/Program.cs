@@ -16,7 +16,7 @@ namespace internal_communication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new project_selection_form());
+            Application.Run(new login_form());
         }
     }
 }
